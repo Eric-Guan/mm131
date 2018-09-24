@@ -6,7 +6,7 @@ from mm131.items import Mm131Item
 class Mm131Spider(scrapy.Spider):
     name = "mm131"
     allowed_domains = ["www.mm131.com"]
-    start_urls = ['http://www.mm131.com/xiaohua/']
+    start_urls = ['http://www.mm131.com/xinggan/','http://www.mm131.com/qingchun/','http://www.mm131.com/xiaohua/','http://www.mm131.com/chemo/','http://www.mm131.com/qipao/','http://www.mm131.com/mingxing/']
 
     def parse(self, response):
         list = response.xpath("//dl[contains(@class,'list-left')]/dd[not(@class='page')]")
